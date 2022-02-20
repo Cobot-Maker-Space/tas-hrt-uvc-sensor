@@ -4,9 +4,7 @@
 #include <WiFi.h>
 #include <Wire.h>
 
-const char* AP_SSID = "Cobot Maker Space 2.4Ghz";
-const char* AP_PASSWORD = "r4HJbzjtlKOUtQcnENbU";
-const char* MQTT_TOPIC_BASE = "tas/hrt/uvc";
+const char *MQTT_TOPIC_BASE = "tas/hrt/uvc";
 
 const uint32_t INTERVAL_MILLIS = 100;
 
@@ -19,11 +17,11 @@ const double UVC_SENSOR_VOLTAGE = 3.3;
 
 String mac_address;
 DFRobot_LCD lcd(16, 2);
-char* mqtt_topic;
+char *mqtt_topic;
 
 WiFiClient client;
 Adafruit_MQTT_Client mqtt(&client, MQTT_BROKER_ADDR, MQTT_PORT);
-Adafruit_MQTT_Publish* queue;
+Adafruit_MQTT_Publish *queue;
 
 void setup() {
   Serial.begin(115200);
@@ -67,10 +65,10 @@ void mqtt_connect() {
   }
   Serial.println("Connecting to MQTT...");
   while ((ret = mqtt.connect()) != 0) {
-       Serial.println(mqtt.connectErrorString(ret));
-       Serial.println("Retrying MQTT connection in 5 seconds...");
-       mqtt.disconnect();
-       delay(5000);
+    Serial.println(mqtt.connectErrorString(ret));
+    Serial.println("Retrying MQTT connection in 5 seconds...");
+    mqtt.disconnect();
+    delay(5000);
   }
   Serial.println("MQTT Connected!");
 }

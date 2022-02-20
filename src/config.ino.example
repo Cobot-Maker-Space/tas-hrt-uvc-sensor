@@ -1,0 +1,4 @@
+#define MQTT_BROKER_ADDR ""
+#define MQTT_PORT
+#define AP_SSID ""
+#define AP_PASSWORD ""
