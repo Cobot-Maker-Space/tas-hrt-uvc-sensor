@@ -4,6 +4,8 @@
 #include <WiFi.h>
 #include <Wire.h>
 
+#include "config.h"
+
 const char *MQTT_TOPIC_BASE = "tas/hrt/uvc";
 
 const uint32_t INTERVAL_MILLIS = 100;
