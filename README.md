@@ -21,6 +21,11 @@ Either the [Arduino IDE][8] or [Arduino CLI][9] can be used for compiling and
 uploading to the ESP32. `uvc-sensor/config.h.example` should be copied to
 `uvc-sensor/config.h` and updated with the required details before compilation.
 
+## Acknowledgements
+This work was developed as part of the the [Trustworthy Human Robot Teams project][10],
+ supported by the [UK Engineering and Physical Sciences Research Council][11]
+(EPSRC) through the [Trustworthy Autonomous Systems Hub][12] ([EP/V00784X/1][13]).
+
 [1]: https://www.espressif.com/en/products/socs/esp32
 [2]: https://www.mikroe.com/uvc-click
 [3]: https://mqtt.org/
@@ -30,3 +35,7 @@ uploading to the ESP32. `uvc-sensor/config.h.example` should be copied to
 [7]: https://github.com/bearwaterfall/DFRobot_LCD-master
 [8]: https://www.arduino.cc/en/software
 [9]: https://www.arduino.cc/pro/cli
+[10]: https://www.tas.ac.uk/current-research-projects/trustworthy-human-robot-teams/
+[11]: https://www.ukri.org/councils/epsrc/
+[12]: https://www.tas.ac.uk/
+[13]: https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/V00784X/1
